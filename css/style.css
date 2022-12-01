@@ -1,0 +1,68 @@
+*{/*Aca hago un reseteo para que se vea igual en todos los navegadores.
+    lo que hace en inicializar la pagina toda en 0 y a lo largo del progrmaa se va modificando*/
+    margin:0px;/*Saca el margen entre un parrafo y otro*/
+    padding: 0px; /*Saca lo espacio con el margen izquiero, donde irian las viñetas*/
+
+}
+
+table/*Le pongo borde y color a la tabla*/
+{
+    
+    border: 1px solid #353A46;
+    background-color: aqua;/*Background para darle color al fondo*/
+    background-image: url("/2parcial/img/candado.png");
+    background-position: center;/*Ubico la imagen en el centro*/
+    background-size: cover;/*Abarca todo el fondo*/
+
+}
+nav a{
+    font-weight: 50px;
+    
+}
+.cerrar{
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 100px;
+}
+
+img
+{
+    
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    
+}
+/*Modifico los button*/
+.botonEnviar{
+    border: solid crimson;
+    
+
+}
+body/*Aca Pongo imagen de fondo*/
+{
+
+    background-image: url("../img/fondocandados.jpg");
+    
+    
+    
+   
+}
+input [type=txt], input[type=password]
+{
+    width: 100%;/*ancho*/
+    
+    border: 1px solidcolor #ccc;
+    box-sizing: border-box;
+}
+input[type=submit]
+{
+    background-color:#1c94c8;
+    color: white;
+    padding: 8px 10px;
+    margin: 8px 0px;
+    border: solid;
+    cursor: pointer;
+    width: 40%;
+}

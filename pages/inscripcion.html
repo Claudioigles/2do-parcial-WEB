@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="icon" type="icono.png" href="../img/7793739352_0a5de1be-e5a6-4609-88bd-dc3425eef266.png" ><!--Pongo el inoco en la solapa de navegacion-->
+
+    <title>Inscripciones</title>
+</head>
+<body>              
+            <header>
+                <nav class="navbar navbar-expand-lg color-nav w-100">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="index.html">
+                        <img src="../img/7793739352_0a5de1be-e5a6-4609-88bd-dc3425eef266.png" width="200" alt="Logo">
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="menu.html"">Inscripciones</a>
+                          </li>
+                          
+                          <li class="nav-item">
+                            <a class="nav-link" href="../pages/consulta.php">Buscar Alumno</a>
+                          </li>
+                         
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </header>       
+     <main>         
+         <h1>FORMULARIO DE INSCRIPCION</h1>                       
+         <section id="formCont">
+             <form action="insertar.php" method="POST">
+                 <fieldset> 
+                  <LEGEND>Datos del Alumno</LEGEND>
+                     <div>
+                     <label for="">Nombre y Apellido:</label>
+                     <input type="text" name="nombre_apellido" placeholder="Nombre y Apellido" >
+                     </div>
+                     <div>
+                       <label for="">Legajo</label>
+                       <input name="legajo" type="number">
+                     </div>
+                     <div>
+                        <label for="">Sexo</label>
+                        <select name="sexo">
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="binario">Binario</option>
+                            <option value="noBinario">No Binario</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                     <div>
+                        <label for="">Tipo y Numero de documento: </label>
+                        <select name="tipo_dni" id="">
+                          <option value="DNI">DNI</option>
+                          <option value="Pasaporte">Pasaporte</option>
+                          <option value="LC">LC</option>
+                          <option value="CI">CI</option>
+                        </select>
+                        <input type="number" name="dni" placeholder="Introduzca el numero" >                                         
+                     </div>
+                       <label> Fecha de Nacimiento:</label>
+                       <input type="date" name="fecha_nacimiento">
+                     </div>                    
+                     <div>
+                         <label for="">N° de celular sin (011): </label>
+                         <input type="tel" name="tel"  placeholder="n°de celular" pattern="[0-9]{8}"  >
+                     </div>
+                     <div>
+                      <label for="">Lugar de Nacimiento</label>
+                      <input name="lugar_nacimiento" type="text">
+                     </div>
+                     <div>
+                      <label for="">Nacionalidad</label>
+                      <input name="nacionalidad" type="text">
+                     </div>
+                     <div>
+                      <label for="">Domicilio Calle</label>
+                      <input name="domicilio" type="text">
+                      <label for="">Altura </label><input name="altura" type="number">
+                      </div>
+                      <div>
+                        <label for="">Codigo Postal</label>
+                        <input name="cp" type="number">
+                      </div>
+                     <div>
+                      <label for="">Piso</label>
+                      <input name="piso" type="text"> <label for="">Torre</label> <input name="torre" type="text"><label for="">Dpto</label><input name="dpto" type="text">
+                     </div>                    
+                     <div>
+                         <label for="">Email: </label>
+                         <input name="email" type="email" name="email" placeholder="email"   id="">
+                     </div>                                         
+                 </fieldset>
+                 <section id="formPadre">
+                   <fieldset><label for="">Datos del Padre/Madre/Tutor</label>
+                    <div>
+                      <label for="">Nombre y Apellido:</label>
+                      <input type="text" name="nombre_padres" placeholder="Nombre y Apellido" >
+                      </div>
+                      <div>
+                         <label for="">Sexo</label>
+                         <select name="sexo_padres">
+                             <option value="masculino">Masculino</option>
+                             <option value="femenino">Femenino</option>
+                             <option value="binario">Binario</option>
+                             <option value="noBinario">No Binario</option>
+                             <option value="otros">Otros</option>
+                         </select>
+                      <div>
+                         <label for="">Tipo y Numero de documento: </label>
+                         <select name="tipo_padres" id="">
+                           <option value="DNI">DNI</option>
+                           <option value="Pasaporte">Pasaporte</option>
+                           <option value="LC">LC</option>
+                           <option value="CI">CI</option>
+                         </select>
+                         <input type="number" name="dni_padres" placeholder="Introduzca el numero" 
+                         pattern="[0-9]{8}" />                                             
+                      </div>
+                        <label> Fecha de Nacimiento:</label>
+                        <input type="date" name="nacimiento_padres">
+                      </div>                                       
+                  </fieldset>
+                 </section>
+                 <input type="submit" value="Registrar">
+                     <input type="reset" value="Borrar" > 
+             </form>
+             
+         </section>
+         <section id="formUbi">
+             <fieldset><legend class="nombre2"> Ubicación</legend> 
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.543775359221!2d-58.56450838477209!3d-34.539784980476135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbb868abdd951%3A0xa4cca1c5cff9526f!2sConsultorios%20Plaza%20Mitre!5e0!3m2!1ses-419!2sar!4v1666637100004!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </fieldset>
+         <section>
+
+
+     </main>
+    
+         <section class="foot">
+             <div class="whats">
+                 <a href="https://api.whatsapp.com/send?phone=5491168845892"><img height="200rem" width="200" src="../img/whatslogo.png" alt="logoWhats" ></a>
+             </div>
+             <div class="insta">
+                <p><a href="https://www.instagram.com/p/Cdy0kVlrwXY/?utm_source=ig_web_copy_link" target="_blank"><img  src="../img/insta.jpg" alt=""></a></p> 
+             </div>
+             <footer>
+                 <p>CopyRight</p>
+             </footer>
+         </section>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

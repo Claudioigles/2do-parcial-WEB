@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.color-nav{    
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    background-color: rgb(228, 65, 65);    
+}
+.color-nav a{
+    color: black;           
+}
+.color-nav li:hover{
+    background-color: #d3e761;
+}
+#formCont{
+    padding-left: 20px;
+    padding-top: 20px;       
+}
+
+
+
